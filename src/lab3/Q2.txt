@@ -1,0 +1,51 @@
+Input split 0 : [apple lemon mango salmon wheat apple]
+Input split 1 : [barley salmon apple orange carrot rice]
+Input split 2 : [mango carrot lemon apple rice tuna]
+
+Mapper 0 output:
+<apple, 1>
+<lemon, 1>
+<mango, 1>
+<salmon, 1>
+<wheat, 1>
+<apple, 1>
+Mapper 1 output:
+<barley, 1>
+<salmon, 1>
+<apple, 1>
+<orange, 1>
+<carrot, 1>
+<rice, 1>
+Mapper 2 output:
+<mango, 1>
+<carrot, 1>
+<lemon, 1>
+<apple, 1>
+<rice, 1>
+<tuna, 1>
+
+Reducer 0 input:
+<apple, [1, 1, 1, 1]>
+<barley, [1]>
+<carrot, [1, 1]>
+Reducer 1 input:
+<lemon, [1, 1]>
+<mango, [1, 1]>
+<rice, [1, 1]>
+Reducer 2 input:
+<salmon, [1, 1]>
+<tuna, [1]>
+<wheat, [1]>
+
+Reducer 0 output:
+<apple, 4>
+<barley, 1>
+<carrot, 2>
+Reducer 1 input:
+<lemon, 2>
+<mango, 2>
+<rice, 2>
+Reducer 2 input:
+<salmon, 2>
+<tuna, 1>
+<wheat, 1>
